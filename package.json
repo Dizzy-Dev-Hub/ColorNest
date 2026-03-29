@@ -1,0 +1,70 @@
+{
+  "name": "colornest",
+  "displayName": "ColorNest",
+  "description": "Automatically applies a unique random color to each VS Code window for easy identification",
+  "version": "1.0.0",
+  "publisher": "DizzyDev",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes",
+    "Other"
+  ],
+  "keywords": [
+    "color",
+    "window",
+    "theme",
+    "peacock",
+    "workspace",
+    "identify",
+    "title bar",
+    "status bar"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "windowColors.shuffle",
+        "title": "Window Colors: Shuffle Color"
+      },
+      {
+        "command": "windowColors.reset",
+        "title": "Window Colors: Reset to Default"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.74.0",
+    "sharp": "^0.34.5",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dizzy-Dev-Hub/ColorNest"
+  },
+  "bugs": {
+    "url": "https://github.com/Dizzy-Dev-Hub/ColorNest/issues"
+  },
+  "homepage": "https://github.com/Dizzy-Dev-Hub/ColorNest#readme",
+  "author": {
+    "name": "Dizzy-Dev-Hub",
+    "url": "https://github.com/Dizzy-Dev-Hub"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#1A535C",
+    "theme": "dark"
+  },
+  "license": "MIT"
+}
